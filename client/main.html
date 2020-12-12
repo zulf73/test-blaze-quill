@@ -1,0 +1,21 @@
+<head>
+  <title>test-blaze-quill</title>
+</head>
+
+<body>
+  <h1>This is a Quill Text box</h1>
+  <div>
+    {{> editor}}  
+  </div>
+</body>
+
+<template name="editor">
+  <div id="editor">editor text</div>
+</template>
+
+<template name="form">
+  <form>
+    {{> editor editorInstance }}
+    <input type="submit" value="save"/>
+  </form>
+</template>
